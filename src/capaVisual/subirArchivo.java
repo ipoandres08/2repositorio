@@ -12,6 +12,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import plataforma.Plataforma;
 
 /**
  *
@@ -152,7 +153,13 @@ public class subirArchivo extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        Plataforma j = new Plataforma();
+        j.setVisible(true);
+        this.dispose();
+                
+                
+               
+                
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

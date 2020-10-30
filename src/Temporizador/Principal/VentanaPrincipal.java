@@ -4,6 +4,7 @@ package Temporizador.Principal;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import plataforma.Plataforma;
 
 
 public class VentanaPrincipal extends javax.swing.JFrame {
@@ -37,13 +38,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
        
-        txt_dias = new JLabel("DIAS:");
+       txt_dias = new JLabel("DIAS:");
         txt_dias.setBounds(35, 20, 60, 30);
         txt_horas = new JLabel("HORAS:");
         txt_horas.setBounds(250, 20, 60, 30);
         txt_minutos = new JLabel("MINUTOS:");
         txt_minutos.setBounds(35, 55, 60, 30);
-        txt_segundos = new JLabel("SEGUNDOS:");
+       txt_segundos = new JLabel("SEGUNDOS:");
         txt_segundos.setBounds(250, 55, 90, 30);
 
         campoDeTexto_dias = new JTextField();
@@ -62,9 +63,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         botonAceptar = new JButton();
         botonAceptar.setText("ACEPTAR");
         botonAceptar.setBounds(200, 100, 100, 27);
+       Plataforma p = new Plataforma();
+       p.setVisible(true);
+               
         botonAceptar.addActionListener(new AccionDelBoton(this));//accion del boton
         
-        add(txt_dias);
+       add(txt_dias);
         add(txt_horas);
         add(txt_minutos);
         add(txt_segundos);
