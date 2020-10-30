@@ -34,7 +34,8 @@ public class AccionDelBoton implements java.awt.event.ActionListener {
         
         this.principal = principal;
         
-        ventanaDeTiempo = new ventanaDeTiempoRestante();
+       ventanaDeTiempo = new ventanaDeTiempoRestante();
+       
         
     }
 
